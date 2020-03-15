@@ -19,7 +19,10 @@ class EmailAddressParser
         arr2 = num
       end
     end
+    puts arr2
+    arr2
   end
+
 end
 
 email_addresses = "john@doe.com, person@somewhere.org"
