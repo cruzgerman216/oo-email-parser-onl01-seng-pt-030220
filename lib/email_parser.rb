@@ -14,6 +14,7 @@ class EmailAddressParser
     arr.each do |num|
       if num.end_with?(",")
         num.chomp(",")
+      end
     end
   end
 end
