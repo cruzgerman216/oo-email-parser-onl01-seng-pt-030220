@@ -10,6 +10,10 @@ class EmailAddressParser
   end
 
   def parse
-    @emails.split(" ")
+    arr = @emails.split(" ")
+    arr.each do |num|
+      if num.end_with?(",")
+        num.chomp("")
+    end
   end
 end
