@@ -14,9 +14,9 @@ class EmailAddressParser
     arr2 = []
     arr.each do |num|
       if num.include?(",")
-        arr2= num.delete_suffix(",")
+        arr2 << num.delete_suffix(",")
       else
-        arr2 = num
+        arr2 << num
       end
     end
     puts arr2
