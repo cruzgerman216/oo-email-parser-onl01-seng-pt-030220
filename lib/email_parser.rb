@@ -11,7 +11,7 @@ class EmailAddressParser
 
   def parse
     arr = @emails.split(" ")
-    arr.collect do |num|
+    arr.each do |num|
       if num.include?(",")
         num.chomp(",")
       end
