@@ -13,7 +13,7 @@ class EmailAddressParser
     arr = @emails.split(" ")
     arr.each do |num|
       if num.include?(",")
-        num.delete_suffix(",")
+        num = num.delete_suffix(",")
       end
     end
   end
