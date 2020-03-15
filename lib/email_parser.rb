@@ -13,7 +13,7 @@ class EmailAddressParser
     arr = @emails.split(" ")
     arr.each do |num|
       if num.end_with?(",")
-        num.chomp("")
+        num.chomp(",")
     end
   end
 end
