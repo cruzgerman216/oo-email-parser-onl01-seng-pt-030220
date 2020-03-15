@@ -11,9 +11,12 @@ class EmailAddressParser
 
   def parse
     arr = @emails.split(" ")
+    arr2 = []
     arr.each do |num|
       if num.include?(",")
-        puts num.delete_suffix(",")
+        arr2= num.delete_suffix(",")
+      else
+        arr2 = num
       end
     end
   end
