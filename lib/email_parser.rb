@@ -18,3 +18,7 @@ class EmailAddressParser
     end
   end
 end
+
+if "num,".include?(",")
+  puts "num,".delete_suffix(",")
+end
