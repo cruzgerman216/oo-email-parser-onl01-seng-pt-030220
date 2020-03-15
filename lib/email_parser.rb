@@ -19,6 +19,7 @@ class EmailAddressParser
   end
 end
 
-if "num,".include?(",")
-  puts "num,".delete_suffix(",")
-end
+email_addresses = "john@doe.com, person@somewhere.org"
+parser = EmailAddressParser.new(email_addresses)
+ 
+puts parser.parse
