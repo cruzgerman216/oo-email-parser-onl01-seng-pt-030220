@@ -20,7 +20,7 @@ class EmailAddressParser
       end
     end
     puts arr2
-    arr2
+    arr2.uniq
   end
 
 end
